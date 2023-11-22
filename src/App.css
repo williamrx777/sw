@@ -32,8 +32,7 @@ margin:15px;
   display: flex;
   margin: 10px;
   padding: 10px;
-  width: 400px;
-  height: 200px;
+ 
 }
 
 .episodio iframe {
@@ -48,3 +47,9 @@ btn {
   color: rgb(0, 140, 255);
 }
 
+@media screen and (min-width: 640px) {
+  .episodio {
+    width: 640px;
+    height: 360px;
+  }
+}
