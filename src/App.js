@@ -53,9 +53,9 @@ class App extends Component {
   
   render() {
     return (
-      <div className="container text-center">
-        <h1 style={{ color: 'white' }} className="h1 text-center">
-          Samurai Warriors
+      <div className="container ">
+        <h1 style={{ color: 'white' }} className="h1 ">
+         Samurai Warriors
         </h1>
         <form className='busca' onSubmit={this.handleSubmit}>
           <input
@@ -79,15 +79,17 @@ class App extends Component {
       )}
 
 
-        <iframe 
-          width="640"
-          height="360"
-          frameBorder="0"
-          src={this.state.url}
-          allowFullScreen
-        ></iframe>
+<div className="episodio">
+  <iframe
+    frameBorder="0"
+    src={this.state.url}
+    allowFullScreen
+    title="Nome do Episódio"
+  ></iframe>
+</div>
 
-        {this.state.codigo < 39 && (
+
+        {this.state.codigo < 145 && (
         <button
           className="btn btn-primary"
           onClick={this.handleNextEpisode}
