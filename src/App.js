@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   fetchData = () => {
-    fetch(`https://wilflix.onrender.com/SW/${this.state.codigo}`)
+    fetch(`https://filmes-e-animes.williamrx777.repl.co/animes/animes-detalhe/${this.state.codigo}/`)
       .then((response) => response.json())
       .then((data) => {
         this.setState({
@@ -89,7 +89,7 @@ class App extends Component {
 </div>
 
 
-        {this.state.codigo < 145 && (
+        {this.state.codigo < 39 && (
         <button
           className="btn btn-primary"
           onClick={this.handleNextEpisode}
