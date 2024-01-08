@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   fetchData = () => {
-    fetch(`https://filmes-e-animes.williamrx777.repl.co/animes/animes-detalhe/${this.state.codigo}/`)
+    fetch(`https://45858a35-015d-4fd9-b0ac-94c8c115d82e-00-2t7im9d0i248n.kirk.replit.dev/animes/animes-detalhe/${this.state.codigo}/`)
       .then((response) => response.json())
       .then((data) => {
         this.setState({
